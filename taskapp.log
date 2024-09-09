@@ -19,3 +19,35 @@
 2024-09-09T19:39:27.932+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2024-09-09T19:39:27.934+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Task(id=1, createdAt=2024-09-09T19:39:27.645569900, title=Auth uchun API chiqatish, description=Auth (truncated)...]
 2024-09-09T19:39:27.957+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-09-09T19:41:58.193+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/task", parameters={}
+2024-09-09T19:41:58.194+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.task.controllers.TaskController#getAllTasks()
+2024-09-09T19:41:58.463+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-2] app.task.services.TaskService            : Tasks returned
+2024-09-09T19:41:58.468+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-09T19:41:58.469+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Task(id=1, createdAt=2024-09-09T19:39:27.645570, title=Auth uchun API chiqatish, description=Author (truncated)...]
+2024-09-09T19:41:58.474+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-09-09T19:42:17.202+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/task/2", parameters={}
+2024-09-09T19:42:17.203+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.task.controllers.TaskController#getTaskById(Long)
+2024-09-09T19:42:17.231+05:00 ERROR 18724 --- [task-app] [http-nio-8080-exec-6] app.task.services.TaskService            : Task not found
+2024-09-09T19:42:17.232+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-09-09T19:42:17.233+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Task not found"]
+2024-09-09T19:42:17.236+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-09-09T19:42:32.960+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/task/1", parameters={}
+2024-09-09T19:42:32.961+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.task.controllers.TaskController#getTaskById(Long)
+2024-09-09T19:42:32.966+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-7] app.task.services.TaskService            : Task found
+2024-09-09T19:42:32.967+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-09T19:42:32.968+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Task(id=1, createdAt=2024-09-09T19:39:27.645570, title=Auth uchun API chiqatish, description=Authori (truncated)...]
+2024-09-09T19:42:32.970+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-09-09T19:42:43.933+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : PUT "/task/1", parameters={}
+2024-09-09T19:42:43.934+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.task.controllers.TaskController#updateTask(Long, UpdateTaskDto)
+2024-09-09T19:42:43.942+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [UpdateTaskDto(title=Auth uchun API chiqatish 2, description=Authorisation uchun API chiqarish, dueDa (truncated)...]
+2024-09-09T19:42:43.949+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-9] app.task.services.TaskService            : Updating task Task(id=1, createdAt=2024-09-09T19:39:27.645570, title=Auth uchun API chiqatish 2, description=Authorisation uchun API chiqarish, dueDate=2024-09-09T11:19:33.522, status=IN_PROGRESS)
+2024-09-09T19:42:43.968+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-9] app.task.services.TaskService            : Task saved successfully
+2024-09-09T19:42:43.968+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-09T19:42:43.968+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Task(id=1, createdAt=2024-09-09T19:39:27.645570, title=Auth uchun API chiqatish 2, description=Autho (truncated)...]
+2024-09-09T19:42:43.969+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-09-09T19:42:55.061+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : DELETE "/task/1", parameters={}
+2024-09-09T19:42:55.062+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.task.controllers.TaskController#deleteTask(Long)
+2024-09-09T19:42:55.082+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-10] app.task.services.TaskService            : Task deleted 1
+2024-09-09T19:42:55.083+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-09-09T19:42:55.083+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Task deleted successfully"]
+2024-09-09T19:42:55.085+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
