@@ -1,0 +1,21 @@
+2024-09-09T19:38:39.098+05:00  WARN 18724 --- [task-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09T19:38:39.190+05:00 DEBUG 18724 --- [task-app] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-09-09T19:38:39.272+05:00 DEBUG 18724 --- [task-app] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-09T19:38:39.298+05:00 DEBUG 18724 --- [task-app] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-09T19:38:39.338+05:00 DEBUG 18724 --- [task-app] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-09T19:39:27.388+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-09T19:39:27.389+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-09-09T19:39:27.389+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-09-09T19:39:27.389+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-09-09T19:39:27.391+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@9c40f43
+2024-09-09T19:39:27.392+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@68fa8ea5
+2024-09-09T19:39:27.393+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-09T19:39:27.393+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-09-09T19:39:27.405+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/task", parameters={}
+2024-09-09T19:39:27.431+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.task.controllers.TaskController#createTask(CreateTaskDto)
+2024-09-09T19:39:27.572+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateTaskDto(title=Auth uchun API chiqatish, description=Authorisation uchun API chiqarish, dueDate (truncated)...]
+2024-09-09T19:39:27.645+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-1] app.task.services.TaskService            : saving task Task(id=0, createdAt=2024-09-09T19:39:27.645569900, title=Auth uchun API chiqatish, description=Authorisation uchun API chiqarish, dueDate=2024-09-09T10:49:33.522, status=OPEN)
+2024-09-09T19:39:27.889+05:00  INFO 18724 --- [task-app] [http-nio-8080-exec-1] app.task.services.TaskService            : Task saved successfully
+2024-09-09T19:39:27.932+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-09T19:39:27.934+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Task(id=1, createdAt=2024-09-09T19:39:27.645569900, title=Auth uchun API chiqatish, description=Auth (truncated)...]
+2024-09-09T19:39:27.957+05:00 DEBUG 18724 --- [task-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
